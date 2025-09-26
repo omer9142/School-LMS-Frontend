@@ -56,8 +56,8 @@ const ClassAttendance = () => {
           status: attendance[s._id] || "Absent",
         })),
       };
-
-      await axios.post("https://school-lms-backend-ctk6.onrender.com//Attendance/Mark", payload, {
+//comnment
+      await axios.post("https://school-lms-backend-ctk6.onrender.com/Attendance/Mark", payload, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
