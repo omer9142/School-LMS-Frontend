@@ -3,7 +3,7 @@ import axios from 'axios';
 import store from './redux/store'; // adjust path to your store
 import { authLogout } from './redux/userRelated/userSlice';
 
-const baseURL = process.env.REACT_APP_BASE_URL || 'http://localhost:5000';
+const baseURL = process.env.REACT_APP_BASE_URL || 'https://school-lms-backend-1.onrender.com';
 
 const api = axios.create({
   baseURL,
