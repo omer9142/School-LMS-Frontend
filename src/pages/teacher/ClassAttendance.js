@@ -89,7 +89,7 @@ const ClassAttendance = () => {
         })),
       };
 
-      await axios.post("http://localhost:5000/Attendance/Mark", payload, {
+      await axios.post("https://school-lms-backend-1.onrender.com/Attendance/Mark", payload, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
